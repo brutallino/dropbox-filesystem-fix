@@ -68,7 +68,6 @@ def start_dropbox():
             preexec_fn=os.setsid,
             cwd=os.path.expanduser("~"),
             stderr=sys.stderr,
-            stdout=sys.STDOUT,
             shell=True,
             close_fds=False,
         )
